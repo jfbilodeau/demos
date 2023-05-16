@@ -1,0 +1,44 @@
+﻿[
+  {
+    "id": "1001",
+    "firstName": "Charles",
+    "lastName": "Babbage",
+    "salary": 65000,
+    "dept": "HR"
+  },
+  {
+    "id": "1002",
+    "firstName": "Ada",
+    "lastName": "Lovelace",
+    "salary": 73000,
+    "dept": "IT"
+  },
+  {
+    "id": "1003",
+    "firstName": "Grace",
+    "lastName": "Hopper",
+    "salary": 71000,
+    "dept": "IT"
+  },
+  {
+    "id": "1004",
+    "firstName": "George",
+    "lastName": "Boole",
+    "salary": 69000,
+    "dept": "FN"
+  },
+  {
+    "id": "1005",
+    "firstName": "Allan",
+    "lastName": "Turing",
+    "salary": 78000,
+    "dept": "HR"
+  },
+  {
+    "id": "1006",
+    "firstName": "Kathleen",
+    "lastName": "Booth",
+    "salary": 75000,
+    "dept": "IT"
+  }
+]

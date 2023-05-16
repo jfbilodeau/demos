@@ -1,0 +1,43 @@
+{
+  "masterKey": {
+    "name": "master",
+    "value": "1ZwRDm61cGTrzen9936ZPz_L4fesLiktRPrcpsUNG_VdAzFuvEOKwg==",
+    "encrypted": false
+  },
+  "functionKeys": [
+    {
+      "name": "default",
+      "value": "AZTcGSmoqNMySd6F7qPYEI7xfepl41FZTFQ8QVc5yaXcAzFuzgVeAw==",
+      "encrypted": false
+    }
+  ],
+  "systemKeys": [],
+  "hostName": "localhost:7071",
+  "instanceId": "000000000000000000000000EC5B1812",
+  "source": "runtime",
+  "decryptionKeyId": ""
+}{
+  "masterKey": {
+    "name": "master",
+    "value": "1ZwRDm61cGTrzen9936ZPz_L4fesLiktRPrcpsUNG_VdAzFuvEOKwg==",
+    "encrypted": false
+  },
+  "functionKeys": [
+    {
+      "name": "default",
+      "value": "AZTcGSmoqNMySd6F7qPYEI7xfepl41FZTFQ8QVc5yaXcAzFuzgVeAw==",
+      "encrypted": false
+    }
+  ],
+  "systemKeys": [
+    {
+      "name": "durabletask_extension",
+      "value": "ybSesyqqL-W07bztrTH4a254tACAQJe5A0yFAdOj77CMAzFuVgBDyw==",
+      "encrypted": false
+    }
+  ],
+  "hostName": "localhost:7071",
+  "instanceId": "000000000000000000000000EC5B1812",
+  "source": "runtime",
+  "decryptionKeyId": ""
+}{}{"TaskHubName":"TestHubName","CreatedAt":"2023-05-11T14:34:24.9045231Z","PartitionCount":4}{"PartitionId":"testhubname-control-00","Owner":null,"Token":null,"Epoch":0}{"OwnerId":"811c9dc5-0000-0000-0000-000000000000","DesiredSwapId":null}{"PartitionId":"testhubname-control-00","Owner":"JFBILODEAU","Token":"363b221e-09fb-4310-a40b-d495c187e4b1","Epoch":1}{"PartitionId":"testhubname-control-01","Owner":"JFBILODEAU","Token":"5bd394b7-f0c3-46e6-8fea-ba5a991c46fb","Epoch":1}{"PartitionId":"testhubname-control-02","Owner":"JFBILODEAU","Token":"e5fb421b-e8da-456f-a0e1-6f8c8704aa45","Epoch":1}{"PartitionId":"testhubname-control-03","Owner":"JFBILODEAU","Token":"7d66c58a-a14b-444c-97b7-0cc9378003af","Epoch":1}{"PartitionId":"testhubname-control-00","Owner":"JFBILODEAU","Token":"ef2e48f4-17c5-47ed-8410-d7ac7d5c7bcd","Epoch":1}{"PartitionId":"testhubname-control-01","Owner":"JFBILODEAU","Token":"8aa4d4e5-afe6-4fb8-b267-7812f173f3d6","Epoch":1}{"PartitionId":"testhubname-control-02","Owner":"JFBILODEAU","Token":"520780ce-59f9-4985-8e7e-209e1c19cc5d","Epoch":1}{"PartitionId":"testhubname-control-03","Owner":"JFBILODEAU","Token":"3b0936c4-3702-40d0-bf28-2f150f0c62ab","Epoch":1}

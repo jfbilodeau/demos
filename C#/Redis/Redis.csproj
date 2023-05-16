@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+      <UserSecretsId>f4531a7b-76ab-4eab-9b55-46391e01d27b</UserSecretsId>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="StackExchange.Redis" Version="2.6.80" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\HrSystem\HrSystem.csproj" />
+    </ItemGroup>
+
+</Project>
