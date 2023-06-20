@@ -12,8 +12,8 @@ var connectionString = configuration["connectionString"];
 await using var client = new ServiceBusClient(connectionString);
 
 var receiver = client.CreateReceiver(
-    "order",
-    "billcc",
+    "demotopic",
+    "demosub",
     new ServiceBusReceiverOptions
     {
         // ReceiveMode = ServiceBusReceiveMode.ReceiveAndDelete

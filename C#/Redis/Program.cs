@@ -21,7 +21,7 @@ var employee = Employees.List().First();
 
 var json = JsonSerializer.Serialize(employee);
 
-var keyName = $"employee-{employee.Id}";
+var keyName = $"projectName.appName.employee-{employee.Id}";
 
 database.StringSet(keyName, json, TimeSpan.FromSeconds(3));
 

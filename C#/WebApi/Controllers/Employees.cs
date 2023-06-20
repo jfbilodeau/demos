@@ -19,6 +19,8 @@ public class EmployeesController : ControllerBase
     [HttpGet(Name = "list")]
     public IEnumerable<Employee> Get()
     {
+        logger.LogInformation("Getting all employees");
+        
         return hrContext.Employees.ToList();
     }
 }

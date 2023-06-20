@@ -26,7 +26,7 @@ var client = new CosmosClient(
 
 var container = client.GetContainer("hr", "employees");
 
-var id = "1004";
+var id = "1005";
 var partitionKey = new PartitionKey(id);
 
 var newEmployee = new Employee

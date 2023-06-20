@@ -9,7 +9,7 @@ var configuration = new ConfigurationBuilder().AddUserSecrets<Program>().Build()
 
 var connectionString = configuration["connectionString"];
 
-var client = new QueueClient(connectionString, "orders");
+var client = new QueueClient(connectionString, "demoqueue");
 
 await client.CreateAsync();
 

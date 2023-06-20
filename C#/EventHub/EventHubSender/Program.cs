@@ -45,7 +45,7 @@ var configuration = new ConfigurationBuilder().AddUserSecrets<Program>().Build()
 
 var connectionString = configuration["connectionString"];
 
-var eventHubName = "employee";
+var eventHubName = "demohub";
 
 var producerClient = new EventHubProducerClient(connectionString, eventHubName);
 

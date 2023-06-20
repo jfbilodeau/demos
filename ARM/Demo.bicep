@@ -10,4 +10,5 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
 }
 
 
-//az deployment group create --name TestDeployment --resource-group Test --template-file .\Test.bicep --parameters location=canadacentral
+// az group create --name Test --location canadacentral
+// az deployment group create --name TestDeployment --resource-group Test --template-file .\Test.bicep --parameters location=canadacentral

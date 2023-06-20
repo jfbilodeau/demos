@@ -11,7 +11,7 @@ var connectionString = configuration["connectionString"];
 
 await using var client = new ServiceBusClient(connectionString);
 
-var sender = client.CreateSender("order");
+var sender = client.CreateSender("demotopic");
 
 using var batch = await sender.CreateMessageBatchAsync();
 

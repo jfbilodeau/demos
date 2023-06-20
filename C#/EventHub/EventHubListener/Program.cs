@@ -12,9 +12,9 @@ var checkPoint = new BlobContainerClient(storageAccountConnectionString, "proces
 
 var connectionString = configuration["connectionString"];
 
-var eventHubName = "employee";
+var eventHubName = "demohub";
 
-var group = "updatehrsystem";
+var group = "demosub";
 
 var processor = new EventProcessorClient(
     checkPoint,
