@@ -1,0 +1,1 @@
+az webapp deployment source config-zip --resource-group [resource-group] --name [web-app-name] --src [./path/source.zip] —slot [staging-slot-name]

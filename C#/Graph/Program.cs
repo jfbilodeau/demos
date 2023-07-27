@@ -13,6 +13,7 @@ var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
 };
+
 var scopes = new[]
 {
     "user.read",
@@ -34,19 +35,20 @@ var scopes = new[]
 
 Console.WriteLine("Getting device code credential...");
 
-Task Callback(DeviceCodeInfo code, CancellationToken cancellation)
-{
-    Console.WriteLine("------------------------------------------------------------");
-    Console.WriteLine($"User code: {code.UserCode}");
-    Console.WriteLine($"Message: {code.Message}");
-    Console.WriteLine("------------------------------------------------------------");
+// Task Callback(DeviceCodeInfo code, CancellationToken cancellation)
+// {
+//     Console.WriteLine("------------------------------------------------------------");
+//     Console.WriteLine($"User code: {code.UserCode}");
+//     Console.WriteLine($"Message: {code.Message}");
+//     Console.WriteLine("------------------------------------------------------------");
 
-    return Task.FromResult(0);
-}
+//     return Task.FromResult(0);
+// }
 
-var deviceCodeCredential = new DeviceCodeCredential(Callback, tenantId, clientId, options);
+var credential = new InteractiveBrowserCredential();
+// var deviceCodeCredential = new DeviceCodeCredential(Callback, tenantId, clientId, options);
 
-var graphClient = new GraphServiceClient(deviceCodeCredential, scopes);
+var graphClient = new GraphServiceClient(credential, scopes);
 
 Console.WriteLine("Getting profile picture...");
 var photoStream = await graphClient.Me.Photo.Content.Request().GetAsync();

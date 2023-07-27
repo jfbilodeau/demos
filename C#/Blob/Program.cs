@@ -38,6 +38,8 @@ Console.WriteLine("Uploading block blob...");
     await using var stream = File.Open("../../Data/Employees.json", FileMode.Open);
 
     await container.UploadBlobAsync(blobName, stream);
+
+    await blob.SetAccessTierAsync(AccessTier.Hot);
 }
 
 Console.WriteLine("Uploading page blob");

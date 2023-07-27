@@ -8,7 +8,7 @@ var configuration = new ConfigurationBuilder().AddUserSecrets<Program>().Build()
 
 var storageAccountConnectionString = configuration["storageAccountConnectionString"];
 
-var checkPoint = new BlobContainerClient(storageAccountConnectionString, "process");
+var storageAccount = new BlobContainerClient(storageAccountConnectionString, "process");
 
 var connectionString = configuration["connectionString"];
 
@@ -17,7 +17,7 @@ var eventHubName = "demohub";
 var group = "demosub";
 
 var processor = new EventProcessorClient(
-    checkPoint,
+    storageAccount,
     group,
     connectionString,
     eventHubName
