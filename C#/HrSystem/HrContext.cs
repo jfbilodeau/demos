@@ -16,13 +16,20 @@ namespace HrSystem
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("SqlDatabase"));
+            // optionsBuilder.UseSqlServer(_configuration.GetConnectionString("SqlDatabase"));
+            optionsBuilder.UseCosmos(
+                _configuration["HrSystemDatabase"],
+                _configuration["HrSystemDatabaseKey"],
+                _configuration["HrSystemDatabaseContainer"]
+            );
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            modelBuilder.Entity<Employee>().ToTable("Employees", "hr");
+            // modelBuilder.Entity<Employee>().ToTable("Employees", "hr");
+
+            modelBuilder.HasDefaultContainer("employees");
         }
     }
 }

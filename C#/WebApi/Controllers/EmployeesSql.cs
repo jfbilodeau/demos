@@ -6,12 +6,12 @@ namespace WebApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class EmployeesController : ControllerBase
+public class EmployeesSqlController : ControllerBase
 {
     private readonly HrContext hrContext;
     private readonly ILogger<EmployeesController> logger;
 
-    public EmployeesController(ILogger<EmployeesController> logger, HrContext hrContext)
+    public EmployeesSqlController(ILogger<EmployeesController> logger, HrContext hrContext)
     {
         this.logger = logger;
         this.hrContext = hrContext;

@@ -13,7 +13,7 @@ public class KaboomController : ControllerBase
         this._logger = logger;
     }
 
-    [HttpGet(Name = "list")]
+    [HttpGet]
     public IEnumerable<object> Get()
     {
         throw new NotImplementedException("Something went wrong...");

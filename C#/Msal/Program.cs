@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿ using Microsoft.Extensions.Configuration;
 using Microsoft.Identity.Client;
 
 Console.WriteLine("Starting MSAL demo...");
@@ -18,7 +18,8 @@ var publicClientApp = PublicClientApplicationBuilder.Create(clientId)
 
 var scopes = new[]
 {
-    "user.read"
+    "user.read",
+    
 };
 
 var authResult = await publicClientApp.AcquireTokenInteractive(scopes).ExecuteAsync();
