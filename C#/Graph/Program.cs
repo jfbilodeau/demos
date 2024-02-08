@@ -45,6 +45,8 @@ Console.WriteLine("Getting device code credential...");
 //     return Task.FromResult(0);
 // }
 
+// var credential = new DefaultAzureCredential();
+
 var credential = new InteractiveBrowserCredential();
 // var deviceCodeCredential = new DeviceCodeCredential(Callback, tenantId, clientId, options);
 

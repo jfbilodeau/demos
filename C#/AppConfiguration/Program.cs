@@ -11,7 +11,8 @@ builder.Configuration.AddAzureAppConfiguration(options => {
         .ConfigureRefresh(refresh => {
             refresh.Register("HrSystem:Web:Message", true)
                 .SetCacheExpiration(TimeSpan.FromSeconds(5));
-        });
+        }
+    );
 });
 
 // Add services to the container.

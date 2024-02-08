@@ -8,5 +8,13 @@
     <h1 class="display-4">Welcome to J-F's Web App v2!</h1>
     <h2>Message: <code>@Model.Message</code></h2>
     <h2>Settings Message: <code>@Model.Settings.Message</code></h2>
+    @if (Model.Settings.ShowMessage)
+    {
+        <h2>Settings ShowMessage: <code>@Model.Settings.ShowMessage</code></h2>
+    }
+    else
+    {
+        <h2>Settings ShowMessage: <code>False</code></h2>
+    }
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
